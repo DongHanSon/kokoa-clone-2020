@@ -38,10 +38,11 @@
         If you have a Kokoa Account, log in with your email or phone number.
       </p>
     </header>
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
+    <form id="login-form" action="friends.html" method="get">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
+      <!-- name이라는 속성은 서버로 전달될때 전달되는 이름  -->
       <a href="#">Find Kakao Account or Password</a>
       <!--페이지를 같은페이지에 있도록 그리고 form태그에 넣은이유는 css에서 login-form을 통해서 링크를 가리킬 수 있다-->
     </form>

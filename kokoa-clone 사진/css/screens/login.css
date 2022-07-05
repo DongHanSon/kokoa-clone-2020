@@ -1,0 +1,64 @@
+.welcome-header {
+  margin: 90px 0;
+  text-align: center;
+  /* h1 이랑 p 태그(텍스트를 다루기 )이기때문에 flex를 안쓰고 가운데로 배치가 가능하다 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  /* import에서 추가한 Open+Sans:wght@400;600이걸보고 글꼴은 400아니면 600의 두꺼를 줄 수 있다  */
+}
+.welcome-header__title {
+  margin-bottom: 60px;
+  font-size: 25px;
+}
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+  /* 색을 회색으로도 줄 수 있다 */
+}
+#login-form{
+  display: flex;
+  /* input태그마다 display : block을 줘도 된다 */
+  flex-direction: column;  /* 요소들이 옆으로 오는걸 원하지 않으니깐 밑으로 가야한다*/
+  justify-content: center;
+  margin : 0 30px;
+}
+#login-form input {
+  border: none;
+  padding: 15px 0;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder {
+  color:rgba(0,0,0,0.2);
+}
+/*#login-form input:focus {
+  outline: none;
+}  이렇게 써도 되고 아니면 이 프로젝트에서 사용될 모든 input들에게 적용되도록 할려면 reset.css마지막부분에다가 코드를 적는다
+input:focus { outline : none; } */
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  /* 마우스를 커서를 해당 태그에 올렸을 때  마우스 커스 모양 not-allowed는 금지 표시가 뜬다 progress는 마우스커서위에 뺑글뺑글도는게(로딩)이 있다*/ 
+  padding: 20px 0;
+  border-radius: 5px;
+}
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  /*모든 link(a)의 기본값 색상은 blue이다  inherit은 부모로부터 상속받는다(즉 색상을 부모로 부터 상속받아 오는것이다 기본(default) 색은 black이다*/
+  font-size: 13px;
+}
+/* 위에 welcome ~ 처럼 form 태그를 표현하자면 
+.login-form__input{}
+.login-form__btn{}
+.login-form__a{} */
