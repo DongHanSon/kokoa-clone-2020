@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--link:css 확인을 통해 만들어짐-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KokoaTalk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <!--상태 바 -->
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+        <!--이 클래스 이름은 스크립트에서 만드는거다
+            그래서 클래스이름 조금이라도 바꾸면 작동 x
+             그리고 i는 icon의 줄인말
+            아이콘 크기를 바꾸고 싶다 fa-2x(크기 lg 등등) 이런식으로 바꾸면 된다 !!-->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <!--css에게 어떤 header를 가리키는지 알려준다
+        상태 바를 그대로 알려준다-->
+      <!--웹사이트에 header가 최소 5개 있을 거같아서 class or id를 넣었다-->
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kakao Account or Password</a>
+      <!--페이지를 같은페이지에 있도록 그리고 form태그에 넣은이유는 css에서 login-form을 통해서 링크를 가리킬 수 있다-->
+    </form>
+    <!--이 웹사이트에 form이 하나밖에 없을 것 같아서 class나 id를 꼭 넣을 필요는 없다-->
+    <script
+      src="https://kit.fontawesome.com/220e61155d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--font awesome에서 사용한 스크립트-->
+  </body>
+</html>

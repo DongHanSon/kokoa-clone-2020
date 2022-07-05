@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+/* 구글 폰트에서 받은 style 태그안에 있는 코드를 복사후 붙여넣기(@import) */
+@import "reset.css";
+/* 우리가 원하든 안원하든 브라우저가 알아서 html에 적용시키는 스타일이있다 이걸 모두 없애는 방법이 있다
+ reset css를 이용하면된다 css파일에 그 파일을 추가하는거다(왜냐하면 html에 link를 여러줄 만들기 싫어서) !! - 이걸 이용하면 완전 처음부터 시작할 수 있다
+ 브라우저가 주는 스타일을 없애고 자기가 직접 디자인 하는게 제일 좋은 방법이다 */
+@import "status-bar.css";
+/* @import를 통해서 css파일을 추가할 것이다 css 코드를 여러 파일로 분할했다가 다시 합 칠 것이다 */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* font-family : 글꼴, 글꼴, 등등   - 만약 첫번째 글꼴이 없는경우에는 두번째 글꼴 ~~  단 글꼴에 공백이 있으면 큰따옴표로 묶어준다 
+구글 폰트에서 구해서 적용시킬 수 있는데 link를 써서 추가하는 방법과 css(@import)에서 추가하는 방법이 있다 쓸려고 하는 폰트만 선택해서 
+추가해라 왜냐하면 너무 파일이(웹사이트)가 무거워진다 ㅠㅠ*/
+.welcome-header {
+  margin-top: 145px;
+  text-align: center;
+  /* h1 이랑 p 태그 이기때문에 flex를 안쓰고 가운데로 배치가 가능하다 */
+}
+.welcome-header__title {
+  margin-bottom: 50px;
+}
