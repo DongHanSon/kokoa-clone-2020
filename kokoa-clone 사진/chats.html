@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/styles.css" />
-    <!--link:css 확인을 통해 만들어짐-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,14 +9,9 @@
   </head>
   <body>
     <div class="status-bar">
-      <!--상태 바 -->
       <div class="status-bar__column">
         <span>No Service</span>
         <i class="fa-solid fa-wifi"></i>
-        <!--이 클래스 이름은 스크립트에서 만드는거다
-            그래서 클래스이름 조금이라도 바꾸면 작동 x
-             그리고 i는 icon의 줄인말
-            아이콘 크기를 바꾸고 싶다 fa-2x(크기 lg 등등) 이런식으로 바꾸면 된다 !!-->
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
@@ -38,18 +32,15 @@
     </div>
     </header>
 
-    <a id="friends-display-link" href=""> <!--다른 스크린에서는 볼 수 없으니깐 특별하게 id를 주었다-->
+    <a id="friends-display-link" href=""> 
         <i class="fa-solid fa-circle-info"></i> Friends'Names Display <i class="fa-solid fa-chevron-right fa-xs"></i>
     </a>
     <main class="friends-screen">
         <div class="user-component">
-            <!--이걸 반복해서 사용하기때문에 component라는 단어를 사용-->
             <div class="user-component__column">
                 <img class="user-component__avatar user-component__avatar--xl" src="https://cdn-icons-png.flaticon.com/512/763/763789.png" />
-                <!--user-component__avatar--xl이거는 modifier(변형)이다 -->
                 <div class="user-component__text">
                     <h4 class="user-component__title">Drawing-Cat</h4>
-                    <!--<h6 class="user-component__subtitle">this text whatever</h6>-->
                 </div>
             </div>
             <div class="user-component__column"></div>
@@ -59,10 +50,8 @@
                 <span>Channel</span> <i class="fa-solid fa-chevron-up fa-xs"></i>
             </div>
             <div class="user-component">
-                <!--이걸 반복해서 사용하기때문에 component라는 단어를 사용-->
                 <div class="user-component__column">
                     <img class="user-component__avatar user-component__avatar--sm" src="https://cdn-icons.flaticon.com/png/512/3991/premium/3991999.png?token=exp=1657090599~hmac=6316ef5386971a47bdc9a1155be46337" />
-                    <!--user-component__avatar--xl이거는 modifier(변형)이다 -->
                     <div class="user-component__text">
                         <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
                     </div>
@@ -76,19 +65,15 @@
     
     <nav class="nav">
       <ul class="nav__list">
-        <!--nav__ul이라고 써도 된다-->
         <li class="nav__btn">
-          <!--nav__btn이라고 써도 된다-->
           <a class="nav__link" href="friends.html"
             ><i class="fa-solid fa-user fa-2x"></i
           ></a>
-          <!--nav__a라고 써도 된다-->
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="#"
             ><span class="nav__notification">1</span
             ><i class="fa-regular fa-comment fa-2x"></i></a
-          ><!--notification은 한국말로 알림이라는 뜻-->
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="#"
@@ -103,14 +88,9 @@
         </li>
       </ul>
     </nav>
-
-    <!--navigation은 보통 ul로 나눠진다 그리고 브라우저는 navigation을 찾아서
-    ul의 li안에 있는 link를 가져오게끔 대부분이 설정되어 있다 
-\   class 방법으로 css적는 방법을 썼다 -->
     <script
       src="https://kit.fontawesome.com/220e61155d.js"
       crossorigin="anonymous"
     ></script>
-    <!--font awesome에서 사용한 스크립트-->
   </body>
 </html>

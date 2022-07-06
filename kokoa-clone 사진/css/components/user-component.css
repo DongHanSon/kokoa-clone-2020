@@ -1,0 +1,48 @@
+.user-component {
+  justify-content: space-between;
+}
+/* .user-component {
+  display: flex;
+  user-component__column를 가진 두개의 div가 옆으로 정렬되었다 
+  align-items: center;
+}*/
+.user-component, /*위에 선택자랑 css코드가 같으므로 묶어준다 */
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+.user-component__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+.user-component__title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.user-component__subtitle {
+  margin-top: 8px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.user-component__avatar--xl {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+.user-component__avatar--sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+user-component__title--not-bold {
+  font-weight: 400;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
+}

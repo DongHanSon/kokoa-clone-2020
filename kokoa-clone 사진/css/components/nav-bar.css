@@ -1,0 +1,44 @@
+nav {
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  /* CSS는 기존박스의 크기를 유지하기 위해서 추가된 padding만큼 박스 크기를 늘려버린다
+  width : 100%를 하면 여기서 추가된 패딩만큼 박스 크기가 늘어나고 이와 같은현상을 막기위해서
+  box-sizing : border-box; 를 사용한다 (CSS에게 내가 패딩을 줘도 신경 쓰지마 
+  내 box 사이즈를 늘리지 말아줘 라고 하는 말이다*/
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+.nav__notification {
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px; /*사각형을 원으로 만들고 싶다면 사각형 너비의 반을 값으로 쓰면 된다 */
+  display: flex;
+  justify-content: center;
+  align-items: center; /*글자 1을 가운대*/
+  color: white;
+  font-weight: 600;
+  position: absolute; /*message icon 위에 오도록 */
+  left: 20px;
+  bottom: 18px;
+}
+.nav__dot {
+  background-color: tomato;
+  display: flex;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  left: 30px;
+}
