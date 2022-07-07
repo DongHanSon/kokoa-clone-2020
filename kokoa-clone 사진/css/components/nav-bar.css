@@ -20,15 +20,6 @@ nav {
   position: relative;
 }
 .nav__notification {
-  background-color: tomato;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px; /*사각형을 원으로 만들고 싶다면 사각형 너비의 반을 값으로 쓰면 된다 */
-  display: flex;
-  justify-content: center;
-  align-items: center; /*글자 1을 가운대*/
-  color: white;
-  font-weight: 600;
   position: absolute; /*message icon 위에 오도록 */
   left: 20px;
   bottom: 18px;
@@ -39,6 +30,4 @@ nav {
   width: 6px;
   height: 6px;
   border-radius: 3px;
-  position: absolute;
-  left: 30px;
 }

@@ -1,0 +1,25 @@
+.recommend-friends {
+  padding: 25px 0px;
+  margin: 25px 0px;
+  border-bottom: var(--main-border);
+  border-top: var(--main-border);
+}
+
+.recommend-frends__title {
+  font-size: 14px;
+  color: var(--main-color);
+}
+
+.recommend-friends span {
+  margin: 100px 0;
+  display: block; /* span 태그는 인라인 태그라서 마진 위아래 값이 안먹힌다 그래서 block 으로 바꾼다 */
+  text-align: center;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.screen-header .nav__dot {
+  position: absolute;
+  top: 40px;
+  left: 450px;
+}
