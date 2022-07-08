@@ -13,12 +13,15 @@
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/icon-row.css";
+@import "components/alt-screen-header.css";
 /* @import를 통해서 css파일을 추가할 것이다 css 코드를 여러 파일로 분할했다가 다시 합 칠 것이다 */
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
 @import "screens/more.css";
+@import "screens/chats.css";
+@import "screens/settings.css";
 @import "screens/chat.css";
 body {
   font-family: "Open Sans", sans-serif;

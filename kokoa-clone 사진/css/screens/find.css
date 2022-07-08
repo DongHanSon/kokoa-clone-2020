@@ -11,15 +11,112 @@
 }
 
 .recommend-friends span {
-  margin: 100px 0;
+  margin: 80px 0;
   display: block; /* span 태그는 인라인 태그라서 마진 위아래 값이 안먹힌다 그래서 block 으로 바꾼다 */
   text-align: center;
   font-size: 18px;
   color: var(--main-color);
 }
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
 
-.screen-header .nav__dot {
-  position: absolute;
-  top: 40px;
-  left: 450px;
+.open-chat__header span {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase; /*모든 글자를 대문자로 만드는 속성과 속성값*/
+  opacity: 0.6;
+}
+
+.open-post__members {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.open-post__members img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.opne-post__member-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.open-post__members .divider {
+  width: 2px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 5px;
+}
+
+.open-post__member-status {
+  color: #ffb0e0;
+}
+.open-post__photo {
+  position: relative;
+  margin-top: 30px;
+}
+
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.open-post__heart-count {
+  background-color: var(--main-color);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute; /* 하트가 사진위로 올라가야 하므로  absolute 어린이는 relative 부모가 필요하다*/
+  right: 8px;
+  bottom: 10px;
+  font-size: 12px;
+}
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  animation: heartBeat 1s linear infinite;
+  will-change: transform; /*이 속성을 안주면 너무 흔들려서 줬다 */
+  /*will change는 기본적으로 브라우저에게 뭔가가 바뀔거라고 말해준다 말해줌으로써 애니메이션을 좀 더 낫게 만든다
+   즉 브라우저에게 어떤 것이 변할 것인지 말해준다*/
 }

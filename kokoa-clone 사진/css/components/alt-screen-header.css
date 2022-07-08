@@ -1,0 +1,33 @@
+.alt-header {
+  padding: 40px 25px 25px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alt-header__column {
+  width: 33%;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto; /*auto 값은 브라우저가 남은너비의 공간을
+  계산해서 좌우 균등하게 배분해준다  */
+}
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}

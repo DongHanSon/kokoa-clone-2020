@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat width Cat - Kokoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Cat</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
+        <span><i class="fa-solid fa-bars fa-xl"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="main-chat__timestamp">Tuesday, June 30, 2022</div>
+      <div class="message-row message-row--yours">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/763/763789.png"
+        /><!--하나의 행 안에는 두개의 이미지와 내용열이 존재한다-->
+        <div class="message-row__content">
+          <span class="message__autor">Drawing-cat</span>
+          <div class="message__payload">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row messsage-row--own">
+        <!--modifier(변형)을 이용한다 내가 보낸거니깐 own을 붙여준다(message-row이긴한데, 내가보낸 메세지인거지)-->
+        <div class="message-row__content">
+          <div class="message__payload">
+            <span class="message__bubble">Hi nice to meet you</span>
+            <span class="message__time">21:27</span
+            ><!--이 모든걸 해준건 modifer덕분이다-->
+          </div>
+        </div>
+      </div>
+    </main>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-xl"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fa-regular fa-face-smile-wink fa-xl"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/220e61155d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
