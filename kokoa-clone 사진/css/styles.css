@@ -14,6 +14,7 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 /* @import를 통해서 css파일을 추가할 것이다 css 코드를 여러 파일로 분할했다가 다시 합 칠 것이다 */
 /* Screens */
 @import "screens/login.css";

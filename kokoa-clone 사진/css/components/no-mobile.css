@@ -1,0 +1,25 @@
+#no-mobile  {
+  position: absolute;  /*카카오톡 메인 화면 처럼 만들어줄거다  모든 것의 제일 위에 있게 absoulte 주고*/
+  z-index: 99; /*이 레이어보다 높지않도록  */
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+
+ @media screen and (max-width:550px) {
+  #no-mobile { 
+    display: none;
+  }
+} 
+
+ /* @media screen and (orientation : landscape) { 
+  #no-mobile { 
+    display: none;
+  }
+} */
