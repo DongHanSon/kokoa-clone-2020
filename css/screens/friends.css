@@ -1,0 +1,71 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+
+#friends-display-link i {
+  /*icon은 텍스트이자 font라고 생각하면 된다 */
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+.nav__dot {
+  position: absolute;
+  left: 30px;
+}
+
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden; 
+  }
+}
+
+#splash-screen {
+  /*이요소가 없어져야한다*/
+  background-color: var(--yellow);
+  position: absolute; /*화면 맨위로 올라가게 할려면 absolute 난 이 div가 body에 기준해서 정렬되기를 바란다 */
+  height: 100vh; /*화면 높이의 100%를 의미 */
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 122px;
+  animation: hideSplashScreen 1s ease-in-out forwards; 
+  animation-delay: 1s; /* 애니메이션 실행 시간(언제 시작할건지)*/
+}
+/*다시 돌아오는 이유는 애니메이션이 끝나서 이다 끝나면 element들은 이전의 상태로 돌아가버린다(맨처음 상태로)
+디폴트값에 의해서 결국 이 요소는 다시 opacity : 1; 을 갖게 되는거다  따라서 애니메이션이 시작하고 애니메이션이
+끝나면 splash-screen이라는 div 요소는 opacity : 0;를 기억하지 못한다(잊어버린다) 그래서 animation 속성 값에
+forwards라는 속성 값을 넣어야한다(마지막에 keyframs의 속성값은 마지막 keyframes로 정해지고 애니메이션이 끝나고 
+유지한다 즉 이경우엔 opacity : 0;이 애니메이션이 끝나고도 유지되는거다 )*/
+
+/*문제는 다끝나고 나서도 그 요소가 아직 그대로 있다는 거다 (클릭 x) 우리 눈에는 볼 수 없지만 여전히 브라우저에는 
+남아 있다  클릭하고 링크로 넘어가기 위해서는 visibility : hidden 이라는 값을 keyframs의 마지막 속성에 적는다 (
+  마우스에 걸리지 않게 빠져버리는거다) - 여전히 그 요소는 있다 요소를 완전히 없애기 위해서는 자바스크립트가 필요하다 
+  단지 여기에선 브라우저가 이 요소를 무시하도록 기술 같은 걸 쓴거다(없어지지는 x)*/
+
+  /*즉 forward는 애니메이션의 마지막 값을 기억하고 싶다면 쓰고(애니메이션이 끝난 자리에 복사/붙여넣기하고 싶다면)

@@ -1,0 +1,8 @@
+:root {
+  --yellow: #fae100;
+  --horizontal-space: 25px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.2);
+  /* border부분이 여러번 나왔는데 이게 반복해서 나오지 않게 border를 변수에 넣는게 좋다  
+  같은 코드가 계속 반복되서 나오면 변수로 만드는게 좋다(똑같은 코드를 여러번 사용하지 않도록)*/
+  --main-color: rgba(0, 0, 0, 0.5);
+}

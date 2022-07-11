@@ -1,0 +1,28 @@
+.status-bar {
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+  width: 100%;
+}
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar__column .fa-battery-full {
+  margin: 0 5px;
+}
+/* 그냥 justify-content를 하게되면 시계가 정중앙에 있지 않는다 ㅠㅠ 서비스 부분이 크고 배터리 부분이 작아서 그렇다 
+  space-between은 좋지만 각자 다른 너비 값을 가지고 있기 때문에 
+  정중앙에 안온다(시계가) 그래서 위의 방법이 css hack이라는 방법이다 (레시피 같은... 따로따로)  이방법을 사용해서 시계를 정중앙에 놓을 수 있다*/
+/* 이제 시계가 완벽하게 중앙에 올 수 있게 된다 */

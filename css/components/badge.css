@@ -1,0 +1,12 @@
+/* 빨간색 동그라미 1 */
+.badge {
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px; /*사각형을 원으로 만들고 싶다면 사각형 너비의 반을 값으로 쓰면 된다 */
+  display: flex;
+  justify-content: center;
+  align-items: center; /*글자 1을 가운대*/
+  color: white;
+  font-weight: 600;
+}
